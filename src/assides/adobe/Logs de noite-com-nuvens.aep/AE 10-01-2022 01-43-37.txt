@@ -1,0 +1,8 @@
+  10/01/2022 01:43:37: iniciando composição “Composição 1”.
+
+  Saída para: C:\Users\Uiaran\Desktop\Composição 1.avi    10/01/2022 01:43:40: composição concluída “Composição 1”.
+
+
+  Tempo total decorrido: 3 segundos
+Log fechado em 10/01/2022 às 01:43:40
+

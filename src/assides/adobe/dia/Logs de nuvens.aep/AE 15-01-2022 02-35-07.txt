@@ -1,0 +1,8 @@
+  15/01/2022 02:35:07: iniciando composição “tempConverterComp”.
+
+  Saída para: C:\Users\Uiaran\AppData\Local\Temp\Bodymovin\0x5d5zobw5\raw\images\img_0.png    15/01/2022 02:35:07: composição concluída “tempConverterComp”.
+
+
+  Tempo total decorrido: 0 segundos
+Log fechado em 15/01/2022 às 02:35:07
+
