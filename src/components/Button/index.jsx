@@ -1,10 +1,10 @@
 import { Container} from './styles';
 
-const Button = () => {
+const Button = ({color, name}) => {
     
     return(
-        <Container color={"black"}>
-            <button>Create</button>
+        <Container color={color}>
+            <button>{name}</button>
         </Container>
     );
 }

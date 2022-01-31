@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FcTodoList, AiOutlinePlusCircle } from '../../Styles/Icons';
+import { FcTodoList, FcPlus } from '../../Styles/Icons';
 
 export const Container = styled.div`
     display: flex;
@@ -77,9 +77,9 @@ export const SameTaskIcon = styled( FcTodoList )`
     margin-right: 0.3rem;
 `;
 
-export const SameIconTask = styled(AiOutlinePlusCircle)`
+export const SameIconTask = styled(FcPlus)`
         height: 1.2rem;
-        width: 1.2rem;
+        width: 1.3rem;
     &:hover{
         cursor: pointer;
         color: #719ECE;

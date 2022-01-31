@@ -1,5 +1,6 @@
 const theme = {
     Ligth : {
+        red:  "red",
         ligthCard : "FFFFFF",
         ligthBackground : "E1E7FB",
         ligthButton : "262626",

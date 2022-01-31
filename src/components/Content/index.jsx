@@ -1,10 +1,10 @@
 import { Container } from "./styles";
 
 
-const Content = () => {
+const Content = (props) => {
     return (
         <Container>
-            <h1>Aqui ta legal</h1>
+            {props.children}
         </Container>
     );
 };

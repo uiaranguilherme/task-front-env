@@ -1,7 +1,8 @@
 export {
     FcSearch, 
     FcSettings, 
-    FcTodoList } from "react-icons/fc";
+    FcTodoList, 
+    FcPlus } from "react-icons/fc";
 
 export { 
     FiTag 
@@ -10,3 +11,5 @@ export {
 export { 
     AiOutlinePlusCircle
 } from "react-icons/ai";
+
+export { BsFillCheckCircleFill } from 'react-icons/bs';

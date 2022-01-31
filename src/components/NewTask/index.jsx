@@ -1,19 +1,25 @@
 import { useState } from "react";
 import { Container, SameTaskIcon, TitleTask, DescriTask, SubTask, SameIconTask, FormContent } from "./styles";
+import { Form } from "@unform/web";
+import axios from '../axios';
+
 import Card from '../Card';
 import Tag from '../Tag';
 import Button from '../Button';
-import { Form } from "@unform/web";
 import Input from '../Form/Input';
 
 const NewTask = () => {
+    // estados dos inputs
     const [taskName, setTaskName] = useState('');
     const [id, setId] = useState(0);
     const [task, setTask] = useState([ ]);
 
+    //função de pegar dados por submit
     function getData(data){
         setTask([...task, {id: setId(id + 1), name: data.task}])
     }
+
+    //função para enviar a nova task para backend
 
     return (
         <Card width={"auto"} heigth={"auto"}>
@@ -53,7 +59,7 @@ const NewTask = () => {
                     
                     <Tag/>
                     
-                    <Button/>
+                    <Button color={"black"} name={"Criar"} />
             </Container>
         </Card>
     );
