@@ -1,10 +1,10 @@
 import { Container} from './styles';
 
-const Button = ({color, name}) => {
+const Button = ({color, name, funcao}) => {
     
     return(
         <Container color={color}>
-            <button>{name}</button>
+            <button onClick={funcao} type="button" >{name}</button>
         </Container>
     );
 }

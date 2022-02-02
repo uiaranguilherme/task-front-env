@@ -1,3 +1,5 @@
+import axios from "axios";
+import api from "../../../services/api.services";
 import Task from "../../Task";
 import { Container, PreCreate } from "./styles";
 
@@ -11,6 +13,26 @@ const CreatedTasks = () => {
 //  5ª color = A COR QUE DESEJA QUE O BOTÃO SEJA,
 //  6º NomeButton = O NOME DO BOTÃO EM CADA TASK.
 
+    const listEvent = async () => {
+        try{
+
+            await axios({
+                method : 'get',
+                url: 'http://localhost:3333/event/list',
+                params: { email: 'guilherme@hotmail.com' },
+            })
+            .then( (response) => {
+                const data = response
+                console.log(data.data.list, {message: "Envio bem sucedido."})
+            })
+            .catch((erro) => console.log({ erro }))
+
+        }catch(err){
+            console.log({ 404: err })
+        }
+    }
+
+    console.log(listEvent())
 
     return (
         <Container>
