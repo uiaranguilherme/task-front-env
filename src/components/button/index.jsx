@@ -1,12 +1,30 @@
 import ButtonText from './button-text'
 import ButtonContained from './button-contained'
 
-const Button = ({children, variant, ...restPropsButton}) => {
+const Button = ({
+    children,
+    variant,
+    adornIcon = { position: '', Icon: '' },
+    ...restPropsButton
+}) => {
+
     switch(variant){
         case 'text':
-            return <ButtonText {...restPropsButton}>{children}</ButtonText>
+            return(
+                <ButtonText {...restPropsButton}>
+                    {adornIcon.position === 'start' ? adornIcon.Icon : ''}
+                    {children}
+                    {adornIcon.position === 'end' ? adornIcon.Icon : ''}
+                </ButtonText>
+            ) 
         case 'contained':
-            return <ButtonContained {...restPropsButton}>{children}</ButtonContained>
+            return(
+                <ButtonContained {...restPropsButton}>
+                    {adornIcon.position === 'start' ? adornIcon.Icon : ''}
+                    {children}
+                    {adornIcon.position === 'end' ? adornIcon.Icon : ''}
+                </ButtonContained>
+            )
         default: 
             throw 'é necessario informar a variant'
     }

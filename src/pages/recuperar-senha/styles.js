@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerCadastroPage = styled.div`
+export const ContainerRecuperarSenhaPage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

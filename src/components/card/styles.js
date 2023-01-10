@@ -6,9 +6,9 @@ const Card = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: ${(props) => props.theme.Background};
-  min-height: 70%;
   width: 25%;
   border-radius: 10px;
+  padding: 15px;
 
   border: 1px solid ${(props) => props.theme.borderColor};
   -webkit-box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.39);
