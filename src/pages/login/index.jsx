@@ -1,11 +1,14 @@
 import React from "react"
-import { ContainerLoginPage, LogoArea, Form, ButtonsArea } from './styles'
 import logo from '../../assets/logo.png'
 import Input from '../../components/input'
 import Button from "../../components/button"
 import Card from "../../components/card/styles"
+import { useNavigate } from 'react-router-dom'
+import { ContainerLoginPage, LogoArea, Form, ButtonsArea, AreaRestart, AreaLogin } from './styles'
 
 const Login = () => {
+    const navigate = useNavigate();
+
     return(
         <ContainerLoginPage>
             <Card>
@@ -18,9 +21,31 @@ const Login = () => {
                     <Input placeholder="Password" type='password' name="password"/>
                 </Form>
                 <ButtonsArea>
-                    <Button style={{width: '8rem', height: '2rem'}} variant='text'>Recuperar Senha</Button>
-                    <Button style={{width: '8rem', height: '2rem'}} variant='text'>Cadastrar-se</Button>
-                    <Button style={{width: '10rem', height: '2rem'}} variant='contained'>Acessar</Button>
+                    <AreaRestart>
+                        <Button
+                            style={{width: '8rem', height: '2rem'}}
+                            variant='text'
+                            onClick={() => navigate('/recuperar-senha')}
+                        >
+                            Recuperar Senha
+                        </Button>
+                        <Button
+                            style={{width: '8rem', height: '2rem'}}
+                            variant='text'
+                            onClick={() => navigate('/cadastro')}
+                        >
+                            Cadastrar-se
+                        </Button>
+                    </AreaRestart>
+                    <AreaLogin>
+                        <Button
+                            style={{width: '10rem', height: '2rem'}}
+                            variant='contained'
+                            onClick={() => navigate('/dashboard')}
+                        >
+                            Acessar
+                        </Button>
+                    </AreaLogin>
                 </ButtonsArea>
             </Card>
         </ContainerLoginPage>

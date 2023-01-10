@@ -31,10 +31,19 @@ export const Form = styled.div`
   }
 `;
 
+export const AreaRestart = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+`;
+
+export const AreaLogin = styled.div``;
+
 export const ButtonsArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 6.5rem;
 `;
