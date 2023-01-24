@@ -1,3 +1,4 @@
+import Dialog from "../../../../components/dialog"
 import Layout from "../../../../layout"
 
 export const Projetos = () => {
@@ -5,7 +6,7 @@ export const Projetos = () => {
         <Layout
             visibleMenuBar={false}
         >
-
+            <Dialog/>
         </Layout>
     )
 }

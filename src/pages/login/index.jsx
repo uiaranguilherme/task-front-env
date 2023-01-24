@@ -1,20 +1,24 @@
-import React from "react"
-import LoginPage from "./view/login"
-import Cadastro from "./view/cadastro"
-import { ContainerLoginPage } from './styles'
+import React, { lazy, Suspense } from "react"
 import Card from "../../components/card/styles"
-import RecuperarSenha from "./view/recuperar-senha"
+import { ContainerLoginPage } from './styles'
 import { Outlet, Route, Routes } from 'react-router-dom'
+import LazySuspense from "../../components/lazy-suspense"
+
+const Cadastro = lazy(() => import ("./view/cadastro"))
+const RecuperarSenha = lazy(() => import("./view/recuperar-senha"))
+const LoginPage = lazy(() => import("./view/login"))
 
 const LoginRoutes = () => {
     return(
-        <Routes>
-            <Route element={<Login/>}>
-                <Route index element={<LoginPage/>}/>
-                <Route path="cadastro" element={<Cadastro/>}/>
-                <Route path="recuperar-senha" element={<RecuperarSenha/>}/>
-            </Route>
-        </Routes>
+        <Suspense fallback={<LazySuspense/>}>
+            <Routes>
+                <Route element={<Login/>}>
+                    <Route index element={<LoginPage/>}/>
+                    <Route path="cadastro" element={<Cadastro/>}/>
+                    <Route path="recuperar-senha" element={<RecuperarSenha/>}/>
+                </Route>
+            </Routes>
+        </Suspense>
     )
 }
 
