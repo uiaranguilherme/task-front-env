@@ -1,55 +1,31 @@
 import React from "react"
-import logo from '../../assets/logo.png'
-import Input from '../../components/input'
-import Button from "../../components/button"
+import LoginPage from "./view/login"
+import Cadastro from "./view/cadastro"
+import { ContainerLoginPage } from './styles'
 import Card from "../../components/card/styles"
-import { useNavigate } from 'react-router-dom'
-import { ContainerLoginPage, LogoArea, Form, ButtonsArea, AreaRestart, AreaLogin } from './styles'
+import RecuperarSenha from "./view/recuperar-senha"
+import { Outlet, Route, Routes } from 'react-router-dom'
+
+const LoginRoutes = () => {
+    return(
+        <Routes>
+            <Route element={<Login/>}>
+                <Route index element={<LoginPage/>}/>
+                <Route path="cadastro" element={<Cadastro/>}/>
+                <Route path="recuperar-senha" element={<RecuperarSenha/>}/>
+            </Route>
+        </Routes>
+    )
+}
 
 const Login = () => {
-    const navigate = useNavigate();
-
     return(
         <ContainerLoginPage>
             <Card>
-                <LogoArea>
-                    <img src={logo} alt="logo empresa" srcset={logo} />
-                    <h4>Jura Board</h4>
-                </LogoArea>
-                <Form>
-                    <Input placeholder="Login" type='text' name="login"/>
-                    <Input placeholder="Password" type='password' name="password"/>
-                </Form>
-                <ButtonsArea>
-                    <AreaRestart>
-                        <Button
-                            style={{width: '8rem', height: '2rem'}}
-                            variant='text'
-                            onClick={() => navigate('/recuperar-senha')}
-                        >
-                            Recuperar Senha
-                        </Button>
-                        <Button
-                            style={{width: '8rem', height: '2rem'}}
-                            variant='text'
-                            onClick={() => navigate('/cadastro')}
-                        >
-                            Cadastrar-se
-                        </Button>
-                    </AreaRestart>
-                    <AreaLogin>
-                        <Button
-                            style={{width: '10rem', height: '2rem'}}
-                            variant='contained'
-                            onClick={() => navigate('/dashboard')}
-                        >
-                            Acessar
-                        </Button>
-                    </AreaLogin>
-                </ButtonsArea>
+                <Outlet/>
             </Card>
         </ContainerLoginPage>
     )
 }
 
-export default Login
+export default LoginRoutes

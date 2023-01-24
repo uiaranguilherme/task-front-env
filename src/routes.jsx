@@ -1,21 +1,11 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Login from './pages/login'
-import Cadastro from './pages/cadastro'
-import RecuperarSenha from './pages/recuperar-senha'
 import { BoardPerId, Projetos } from './pages/dashboard'
 
 const routes = createBrowserRouter([
     {
-        path: '/',
+        path: '/*',
         element: <Login/>
-    },
-    {
-        path: '/cadastro',
-        element: <Cadastro/>
-    },
-    {
-        path: '/recuperar-senha',
-        element: <RecuperarSenha/>
     },
     {
         path: '/dashboard',

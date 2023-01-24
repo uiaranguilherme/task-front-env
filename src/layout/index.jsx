@@ -21,16 +21,8 @@ const Layout = ({children, visibleMenuBar = true, visibleSubHeader = true}) => {
                 {visibleMenuBar && 
                     <MenuBar
                         buttons={[
-                            {
-                                Icon: BsKanban,
-                                title: 'Kanban Board',
-                    
-                            },
-                            {
-                                Icon: BsListTask,
-                                title: 'Tasks Board',
-                                
-                            }
+                            {   Icon: BsKanban, title: 'Kanban Board'   },
+                            {   Icon: BsListTask, title: 'Tasks Board'  }
                         ]}
                     />
                 }
