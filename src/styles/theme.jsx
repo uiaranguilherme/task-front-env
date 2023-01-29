@@ -4,6 +4,7 @@ const createTheme = (theme) => (
         red:  "red",
         Card : "#FFFFFF",
         Background : "#E1E7FB",
+        title: "#333333",
         Button : "#2a5ada",
         Marcation : "#99AFF2",
         iconColor: "#2b2d42",

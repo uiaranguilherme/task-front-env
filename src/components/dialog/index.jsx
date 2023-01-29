@@ -1,14 +1,26 @@
-import React from "react"
-import { createPortal } from "react-dom";
+import React, { useEffect } from "react"
+import ReactDom from "react-dom"
 import { WhapperDialog } from './styles'
-import { createElement } from "react";
+import Card from '../card/styles'
+import { useState } from "react"
 
-const Dialog = () => {
-    const root = document.getElementById('root');
+const Dialog = ({children, open, cardProps}) => {
+    const [anchor, setAnchor] = useState(null)
+    
+    useEffect(() => {
+        const newanchor = document.createElement('div');
+        document.body.appendChild(newanchor)
 
-    return createPortal(
-        <WhapperDialog>Hello Word</WhapperDialog>,
-        root
+        setAnchor(newanchor)
+    }, [open])
+
+    return open&& ReactDom.createPortal(
+        <WhapperDialog>
+            <Card {...cardProps}>
+                {children}
+            </Card>
+        </WhapperDialog>
+        , anchor
     )
 }
 

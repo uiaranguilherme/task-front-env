@@ -25,9 +25,7 @@ const LoginRoutes = () => {
 const Login = () => {
     return(
         <ContainerLoginPage>
-            <Card>
-                <Outlet/>
-            </Card>
+            <Outlet/>
         </ContainerLoginPage>
     )
 }

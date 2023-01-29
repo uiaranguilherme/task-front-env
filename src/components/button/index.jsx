@@ -1,5 +1,6 @@
 import ButtonText from './button-text'
 import ButtonContained from './button-contained'
+import ButtonOutlined from './button-outlined'
 
 const Button = ({
     children,
@@ -24,6 +25,14 @@ const Button = ({
                     {children}
                     {adornIcon.position === 'end' ? adornIcon.Icon : ''}
                 </ButtonContained>
+            )
+        case 'outlined':
+            return(
+                <ButtonOutlined {...restPropsButton}>
+                    {adornIcon.position === 'start' ? adornIcon.Icon : ''}
+                    {children}
+                    {adornIcon.position === 'end' ? adornIcon.Icon : ''}
+                </ButtonOutlined>
             )
         default: 
             throw 'é necessario informar a variant'

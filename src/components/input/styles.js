@@ -7,6 +7,7 @@ export const TextField = styled.input`
   border: 1px solid #fcfcfc;
   color: black;
   margin: 5px 0;
+  width: ${(props) => (props.fullWidth ? "100%" : "")};
 
   &::placeholder {
     color: #acacac;

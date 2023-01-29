@@ -16,5 +16,5 @@ export const GlobalStyles = createGlobalStyle`
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-    } 
+    }
 `;

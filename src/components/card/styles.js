@@ -6,7 +6,6 @@ const Card = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: ${(props) => props.theme.Background};
-  width: 25%;
   border-radius: 10px;
   padding: 15px;
 
