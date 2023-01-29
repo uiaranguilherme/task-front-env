@@ -5,22 +5,19 @@ import Card from '../card/styles'
 import { useState } from "react"
 
 const Dialog = ({children, open, cardProps}) => {
-    const [anchor, setAnchor] = useState(null)
-    
-    useEffect(() => {
-        const newanchor = document.createElement('div');
-        document.body.appendChild(newanchor)
 
-        setAnchor(newanchor)
-    }, [open])
+    if(open === undefined){
+        console.error("variavel 'open' não declarada no modal.");
+        throw new Error("variavel 'open' não declarada no modal.");
+    }
 
-    return open&& ReactDom.createPortal(
-        <WhapperDialog>
+    return ReactDom.createPortal(
+        <WhapperDialog open={open}>
             <Card {...cardProps}>
-                {children}
+                { open && children }
             </Card>
         </WhapperDialog>
-        , anchor
+        , document.getElementById('root')
     )
 }
 
