@@ -1,14 +1,14 @@
 import React from "react"
-import Dialog from "../../../../../components/dialog"
-import Input from '../../../../../components/input'
-import Grid from "../../../../../components/grid"
-import Button from "../../../../../components/button"
+import Dialog from "../../../../../../components/dialog"
+import Input from '../../../../../../components/input'
+import Grid from "../../../../../../components/grid"
+import Button from "../../../../../../components/button"
 import { TitleModalCreate, FooterModalCreate, Box } from './styles'
 import BoxSolid from "./components/box-solid"
 
 const styled = {
     card: {
-        'width': '70%',
+        'width': '60%',
         'background-color': '#FFFD',
         'justify-content': 'start'
     },

@@ -1,6 +1,7 @@
 export { FcSearch, FcSettings, FcTodoList, FcPlus } from "react-icons/fc";
 
 export { FiTag } from "react-icons/fi";
+export { FaFolder } from "react-icons/fa";
 
 export { AiOutlinePlusCircle, AiOutlineArrowRight } from "react-icons/ai";
 
