@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const AvatarArea = styled.div`
   cursor: pointer;
-  height: 48px;
-  width: 48px;
+  min-height: ${(props) => props.sizePx};
+  min-width: ${(props) => props.sizePx};
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: ${(props) => props.theme.secundary.backgroundContrast};
+  background-color: ${(props) =>
+    props.color ? props.color : props.theme.secundary.backgroundContrast};
 
   h4 {
     font-weight: 400;
