@@ -6,8 +6,8 @@ export const ContainerHeader = styled.div`
   height: 45px;
   padding: 5px 10px;
 
-  border-bottom: 0.5px solid ${(props) => props.theme.borderColor};
-  background-color: ${(props) => props.theme.headerColor};
+  border-bottom: 0.5px solid ${(props) => props.theme.primary.contrastColor};
+  background-color: ${(props) => props.theme.primary.main};
 
   -webkit-box-shadow: 0px 19px 38px -32px rgba(0, 0, 0, 0.59);
   -moz-box-shadow: 0px 19px 38px -32px rgba(0, 0, 0, 0.59);

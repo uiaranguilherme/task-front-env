@@ -14,9 +14,9 @@ export const Button = styled.button`
   border: 1px solid transparent;
 
   &:hover {
-    color: ${(props) => props.theme.borderButton};
+    color: ${(props) => props.theme.primary.button};
     font-weight: bold;
-    border: 1px solid ${(props) => props.theme.borderButton};
+    border: 1px solid ${(props) => props.theme.primary.button};
   }
 
   svg {

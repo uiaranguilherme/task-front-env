@@ -13,7 +13,7 @@ export const FolderWhapper = styled.div`
   border-radius: 10px;
 
   &:hover {
-    background-color: ${(props) => props.theme.hoverButtonColor};
+    background-color: ${(props) => props.theme.primary.backgroundContrast};
   }
 `;
 

@@ -15,6 +15,6 @@ export const TextField = styled.input`
 
   &:hover,
   &:focus {
-    border: 1px solid ${(props) => props.theme.link};
+    border: 1px solid ${(props) => props.theme.primary.button};
   }
 `;

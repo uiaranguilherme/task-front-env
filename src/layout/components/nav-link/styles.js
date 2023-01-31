@@ -9,16 +9,16 @@ export const Link = styled.li`
   margin: 3px;
   padding-bottom: 5px;
   border-bottom: 3px solid trasparent;
-  color: ${(props) => props.theme.link};
+  color: ${(props) => props.theme.primary.button};
 
   &:hover {
     font-weight: bold;
-    border-bottom: 3px solid ${(props) => props.theme.link};
+    border-bottom: 3px solid ${(props) => props.theme.primary.button};
   }
 `;
 
 export const Ancora = styled.a`
-  color: ${(props) => props.theme.link};
+  color: ${(props) => props.theme.primary.button};
   &:active {
     font-weight: ${(props) => (props.active ? "bold" : "")};
   }

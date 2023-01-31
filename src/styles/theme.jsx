@@ -1,27 +1,31 @@
 
 const createTheme = (theme) => (
     theme === 'ligth' ? ({
-        red:  "red",
-        Card : "#FFFFFF",
-        Background : "#E1E7FB",
-        BackgroundRow : "#eeeeee",
-        title: "#333333",
-        Button : "#2a5ada",
-        Marcation : "#99AFF2",
-        iconColor: "#2b2d42",
-        toDo : "#C88638",
-        doing : "#C83838",
-        done: "#5DC838",
-        link: "#2a5ada",
-        borderButton: "#2a5ada",
-        hoverButtonColor: "#eeeeee",
-        borderColor: "rgba(1, 1, 1, 0.2)",
-        avatarColor: "#8d99ae",
-        avatarFontColor: "rgb(229, 229, 229)",
-        headerColor: "#ffffff",
-        subHeaderBackgroundColor: "#FFFFFF",
-        subParagrafColor: "#adb5bd",
-        menuBarBackgroundColor: "#fafbfd" 
+        primary: {
+            main: "#FFFFFF",
+            default: "#FFFFFF",
+            button: "#2a5ada",
+            background: "#FFFFFF",
+            backgroundContrast: "#eeeeee",
+            text: "#333333",
+            icon: "#2b2d42",
+            contrastColor: "rgba(1, 1, 1, 0.2)",
+        },
+        secundary: {
+            main: "#E1E7FB",
+            default: "#E1E7FB",
+            button: "#2a5ada",
+            background: "#fafbfd" ,
+            backgroundContrast: "#eeeeee",
+            text: "#333333",
+            icon: "#2b2d42",
+            contrastColor: "rgba(1, 1, 1, 0.2)",
+        },
+        messages: {
+            error: '',
+            success: '',
+            info: ''
+        }
     })
     : ({
 

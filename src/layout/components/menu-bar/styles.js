@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ContainerMenuBar = styled.div`
   min-width: 13rem;
   height: 100%;
-  background-color: ${(props) => props.theme.menuBarBackgroundColor};
-  border-right: 0.5px solid ${(props) => props.theme.borderColor};
+  background-color: ${(props) => props.theme.secundary.background};
+  border-right: 0.5px solid ${(props) => props.theme.secundary.contrastColor};
 
   -webkit-box-shadow: 13px 0px 38px -32px rgba(0, 0, 0, 0.59);
   -moz-box-shadow: 13px 0px 38px -32px rgba(0, 0, 0, 0.59);
@@ -23,7 +23,7 @@ export const OrganizationWhapper = styled.div`
 export const Project = styled.span``;
 
 export const Organization = styled.span`
-  color: ${(props) => props.theme.subParagrafColor};
+  color: ${(props) => props.theme.secundary.text};
 `;
 
 export const LogoProject = styled.span`

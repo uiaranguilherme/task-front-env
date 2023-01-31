@@ -11,17 +11,17 @@ export const ItemButton = styled.button`
   background-color: transparent;
 
   &:hover {
-    background-color: ${(props) => props.theme.hoverButtonColor};
-    color: ${(props) => props.theme.link};
+    background-color: ${(props) => props.theme.primary.backgroundContrast};
+    color: ${(props) => props.theme.primary.button};
     font-weight: bold;
   }
 
   &:hover > svg {
-    color: ${(props) => props.theme.link};
+    color: ${(props) => props.theme.primary.button};
   }
 
   svg {
-    color: ${(props) => props.theme.iconColor};
+    color: ${(props) => props.theme.primary.icon};
     padding: 5px;
     height: 1.3rem;
     width: 1.3rem;

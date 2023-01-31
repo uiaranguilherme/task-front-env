@@ -7,7 +7,7 @@ export const Box = styled.div`
   padding: 10px 0;
   width: 100.5%;
   border-radius: 3px;
-  border: 3px solid ${(props) => props.theme.borderColor};
+  border: 3px solid ${(props) => props.theme.primary.contrastColor};
 `;
 
 export const Title = styled.span`

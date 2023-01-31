@@ -7,7 +7,7 @@ export const WhapperHeaderRow = styled.span`
   align-items: center;
   height: 3rem;
   width: 100%;
-  background-color: ${(props) => props.theme.Background};
+  background-color: ${(props) => props.theme.secundary.main};
 `;
 export const RowName = styled.div`
   width: 60%;

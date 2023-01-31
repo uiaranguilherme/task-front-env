@@ -8,7 +8,7 @@ export const ContainedButton = styled.button`
   border-radius: 10px;
   font-size: 1.1rem;
   width: ${(props) => (props.fullWidth ? "100%" : "")};
-  background-color: ${(props) => props.theme.Button};
+  background-color: ${(props) => props.theme.primary.button};
   color: white;
 
   svg {
@@ -38,7 +38,7 @@ export const TextButton = styled.button`
   &:hover,
   &:active {
     opacity: 0.8;
-    color: ${(props) => props.theme.Button};
+    color: ${(props) => props.theme.primary.button};
   }
 `;
 export const OutlinedButton = styled.button`
@@ -51,7 +51,7 @@ export const OutlinedButton = styled.button`
   border-style: solid;
   border-width: 1.5px;
   width: ${(props) => (props.fullWidth ? "100%" : "")};
-  border-color: ${(props) => props.theme.Button};
+  border-color: ${(props) => props.theme.primary.button};
 
   svg {
     margin: 3px;
