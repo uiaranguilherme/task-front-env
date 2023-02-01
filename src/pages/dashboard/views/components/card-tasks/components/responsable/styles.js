@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const WhapperReponsabilyUser = styled.div`
   height: 2.3rem;
   position: relative;
+  margin-bottom: 10px;
 `;
 
 export const Container = styled.div`

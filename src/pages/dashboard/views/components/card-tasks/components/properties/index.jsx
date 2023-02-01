@@ -1,47 +1,55 @@
-import { WhapperInfoTask, Box } from'./styles'
-import Input from '../../../../../../../components/input'
+import { WhapperInfoTask, Box, Label, Input, Select } from'./styles'
+import { formatDate } from '../../../../../utils/formatDate';
 
 const Properties = (props) => {
 
-    console.log(props.changeAt.replaceAll('/', '-'));
-    console.log(props.changeAt);
     return(
         <WhapperInfoTask>
             <Box>
-                <label>Severity</label>
-                <input value={props.severity}/>
+                <Label>Severity</Label>
+                <Select value={props.severity}>
+                    <option value="1 - Baixo">1 - Baixo</option>
+                    <option value="2 - Alto">2 - Alto</option>
+                    <option value="3 - Médio">3 - Médio</option>
+                </Select>
             </Box>
             <Box>
-                <label>Create At</label>
-                <input type='date' value={props.createdAt.replaceAll('/', '-')}/>
+                <Label>Create At</Label>
+                <Input type='date' value={formatDate(props.createdAt)}/>
             </Box>
             <Box>
-                <label>Change At</label>
-                <input type='date' value={props.changeAt.replaceAll('/', '-')}/>
+                <Label>Change At</Label>
+                <Input type='date' value={formatDate(props.changeAt)}/>
             </Box>
             <Box title='Estimativa Original'>
-                <label>Original</label>
-                <input value={props.estimated.original}/>
+                <Label>Original</Label>
+                <Input value={props.estimated.original}/>
             </Box>
             <Box title='Estimativa Restante'>
-                <label>Remaining</label>
-                <input value={props.estimated.remaining}/>
+                <Label>Remaining</Label>
+                <Input value={props.estimated.remaining}/>
             </Box>
             <Box title='Estimativa Completa'>
-                <label>Complete</label>
-                <input value={props.estimated.complete}/>
+                <Label>Complete</Label>
+                <Input value={props.estimated.complete}/>
             </Box>
             <Box title='Bloqueio'>
-                <label>Block</label>
-                <input value={props.block ? true : false}/>
+                <Label>Block</Label>
+                <Select value={props.block ? 'true' : 'false'}>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </Select>
             </Box>
             <Box title='Tipo do bloqueio'>
-                <label>Type</label>
-                <input value={props.block.type}/>
+                <Label>Type</Label>
+                <Select value={props.block.type}>
+                    <option value="local">Local</option>
+                    <option value="Interna">Interna</option>
+                </Select>
             </Box>
             <Box title='Motivo do bloqueio'>
-                <label>Reason</label>
-                <input value={props.block.reason}/>
+                <Label>Reason</Label>
+                <Input value={props.block.reason}/>
             </Box>
         </WhapperInfoTask>
     ); 

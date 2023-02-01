@@ -26,7 +26,7 @@ export const dados = [
             month: "numeric",
             day: "numeric",
           }),
-          createdAt: new Date().toLocaleDateString("en-US", {
+          createdAt: new Date().toLocaleDateString({
             year: "numeric",
             month: "numeric",
             day: "numeric",
