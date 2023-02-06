@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Login from './pages/login'
 import { BoardPerId, Projetos } from './pages/dashboard'
 import LazySuspense from './components/lazy-suspense'
+import React from 'react'
 
 const routes = createBrowserRouter([
     {

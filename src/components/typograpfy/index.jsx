@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Typography = ({children, component, ...restProps}) => {
     switch(component){
         case 'h1':

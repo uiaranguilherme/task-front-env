@@ -16,7 +16,7 @@ const createTheme = (theme) => (
             default: "#E1E7FB",
             button: "#2a5ada",
             background: "#fafbfd" ,
-            backgroundContrast: "#eeeeee",
+            backgroundContrast: "#f0f0f0",
             text: "#333333",
             icon: "#2b2d42",
             contrastColor: "rgba(1, 1, 1, 0.2)",

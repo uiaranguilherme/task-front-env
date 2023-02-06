@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet"
+import React from 'react'
 
 const Page = ({children, title}) => {
     return(

@@ -3,6 +3,7 @@ import Card from '../../../../components/card/styles'
 import Input from '../../../../components/input'
 import Page from '../../../../components/page-whapper'
 import { Form, ButtonArea, CardWhapper } from './styles'
+import React from 'react'
 
 const Cadastro = () => {
 

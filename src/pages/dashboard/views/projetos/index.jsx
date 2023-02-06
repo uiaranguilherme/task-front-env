@@ -4,7 +4,7 @@ import ModalCreateProject from "./components/modal-create-project"
 import { useState } from "react"
 import Folder from "./components/folder"
 import { WhapperProject } from './styles';
-
+import React from 'react'
 
 export const Projetos = () => {
     const [isOpen, setIsOpen] = useState(false);

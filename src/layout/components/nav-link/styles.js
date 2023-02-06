@@ -4,12 +4,12 @@ export const Link = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90%;
+  height: 100%;
   width: 5rem;
   margin: 3px;
-  padding-bottom: 5px;
-  border-bottom: 3px solid trasparent;
+  border-bottom: 3px solid transparent;
   color: ${(props) => props.theme.primary.button};
+  font-size: 1.1rem;
 
   &:hover {
     font-weight: bold;

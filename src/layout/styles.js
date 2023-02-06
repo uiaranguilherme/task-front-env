@@ -10,9 +10,12 @@ export const Container = styled.div`
 `;
 
 export const WhapperPage = styled.div`
+  overflow: hidden;
   display: flex;
+  width: 100%;
   height: 100%;
 `;
+
 export const PageArea = styled.div`
   overflow: auto;
   width: 100%;

@@ -6,8 +6,9 @@ export const ItemButton = styled.button`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   margin-top: 5px;
+  font-size: 0.9rem;
   background-color: transparent;
 
   &:hover {
@@ -16,14 +17,14 @@ export const ItemButton = styled.button`
     font-weight: bold;
   }
 
-  &:hover > svg {
-    color: ${(props) => props.theme.primary.button};
-  }
-
   svg {
     color: ${(props) => props.theme.primary.icon};
     padding: 5px;
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  &:hover > svg {
+    color: ${(props) => props.theme.primary.button};
   }
 `;

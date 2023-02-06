@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ContainerHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 45px;
-  padding: 5px 10px;
+  height: 4rem;
+  padding: 3px 10px;
 
   border-bottom: 0.5px solid ${(props) => props.theme.primary.contrastColor};
   background-color: ${(props) => props.theme.primary.main};

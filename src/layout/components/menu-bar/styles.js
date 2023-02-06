@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerMenuBar = styled.div`
-  min-width: 13rem;
+  min-width: 15rem;
   height: 100%;
   background-color: ${(props) => props.theme.secundary.background};
   border-right: 0.5px solid ${(props) => props.theme.secundary.contrastColor};

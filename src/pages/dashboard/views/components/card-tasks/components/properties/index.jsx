@@ -1,5 +1,6 @@
 import { WhapperInfoTask, Box, Label, Input, Select } from'./styles'
 import { formatDate } from '../../../../../utils/formatDate';
+import React from 'react'
 
 const Properties = (props) => {
 
@@ -22,12 +23,8 @@ const Properties = (props) => {
                 <Input type='date' value={formatDate(props.changeAt)}/>
             </Box>
             <Box title='Estimativa Original'>
-                <Label>Original</Label>
+                <Label>Estimate</Label>
                 <Input value={props.estimated.original}/>
-            </Box>
-            <Box title='Estimativa Restante'>
-                <Label>Remaining</Label>
-                <Input value={props.estimated.remaining}/>
             </Box>
             <Box title='Estimativa Completa'>
                 <Label>Complete</Label>
@@ -46,10 +43,6 @@ const Properties = (props) => {
                     <option value="local">Local</option>
                     <option value="Interna">Interna</option>
                 </Select>
-            </Box>
-            <Box title='Motivo do bloqueio'>
-                <Label>Reason</Label>
-                <Input value={props.block.reason}/>
             </Box>
         </WhapperInfoTask>
     ); 

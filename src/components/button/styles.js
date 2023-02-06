@@ -62,3 +62,19 @@ export const OutlinedButton = styled.button`
     opacity: 0.8;
   }
 `;
+
+export const ButtonIcon = styled.button`
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  height: ${(props) => (props.hg ? props.hg : "2rem")};
+  width: ${(props) => (props.wd ? props.wd : "2rem")};
+
+  &:hover {
+    border: 1px solid ${(props) => props.theme.primary.button};
+  }
+`;

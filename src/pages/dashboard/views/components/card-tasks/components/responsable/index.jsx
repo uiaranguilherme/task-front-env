@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Avatar from '../../../../../../../components/avatar'
 import Typography from '../../../../../../../components/typograpfy'
 import { WhapperReponsabilyUser, Container, Line } from './styles'
+import React from 'react'
 
 const dataEmils = [
     {

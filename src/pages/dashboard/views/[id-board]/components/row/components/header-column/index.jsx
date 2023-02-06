@@ -1,0 +1,21 @@
+import React from "react"
+import { WhapperHeaderColumn, ColumnName, ColumnCapacity } from './styles'
+
+const HeaderColumn = ({children, columnTitle, capacity, limit, desableBackground, restProps}) => {
+    return(
+        <WhapperHeaderColumn 
+            {...restProps} 
+            desableBackground={desableBackground}
+        >
+            <ColumnName title={columnTitle}>
+                {columnTitle}
+            </ColumnName>
+            <ColumnCapacity>
+                {capacity && `${capacity}/${limit}` }
+            </ColumnCapacity>
+            {children && children}
+        </WhapperHeaderColumn>
+    )
+}
+
+export default HeaderColumn

@@ -1,6 +1,7 @@
 import { WhapperChildsTask, TaskDivider } from './styles'
 import { BiTask } from 'react-icons/bi'
 import { AiFillBug } from 'react-icons/ai'
+import React from 'react'
 
 const Childs = () => {
     return(

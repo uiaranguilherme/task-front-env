@@ -13,7 +13,9 @@ const Header = () => {
             </Logo>
             <NavHeader>
                 <Links>
-                    <NavLink>
+                    <NavLink
+                        href="dashboard"
+                    >
                         Projetos
                     </NavLink>
                     <NavLink>

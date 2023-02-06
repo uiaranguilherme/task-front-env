@@ -4,6 +4,7 @@ import HeaderTask from "./components/header"
 import Responsable from "./components/responsable"
 import Properties from "./components/properties"
 import Childs from "./components/childs"
+import { Draggable } from "react-beautiful-dnd"
 
 /**
  *
@@ -17,25 +18,32 @@ import Childs from "./components/childs"
 
 
 const CardTasks = (props) => {
-    console.log(props);
     return(
-        <WhapperCardTask>
-            <HeaderTask
-                type={props.type}
-                title={props.title}
-                id={props.id}
-                color={props.color}
-            />
-            <Responsable
-                {...props.responsable}
-            />
-            <Properties
-                {...props.properties}
-            />
-            <Childs
-                {...props.childs}
-            />
-        </WhapperCardTask>
+        <Draggable
+            draggableId={props._id}
+            index={props.index}
+        >
+            {(provided) => (
+                <WhapperCardTask
+                    {...provided.dragHandleProps}
+                    {...provided.draggableProps}
+                    ref={provided.innerRef}
+                >
+                    <HeaderTask
+                        {...props}
+                    />
+                    <Responsable
+                        {...props.responsable}
+                    />
+                    <Properties
+                        {...props.properties}
+                    />
+                    <Childs
+                        {...props.childs}
+                    />
+                </WhapperCardTask>
+            )}
+        </Draggable>
     )
 }
 

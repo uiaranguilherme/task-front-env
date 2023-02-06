@@ -6,6 +6,7 @@ import Stepper from './components/stepper'
 import { AiOutlineArrowRight } from '../../../../styles/icons'
 import { Form, ButtonArea, CardWhapper } from './styles'
 import Page from '../../../../components/page-whapper'
+import React from 'react'
 
 const RecuperarSenha = () => {
     const [step, setStep] = useState("Enviar SMS com Cógigo de Verificação");
