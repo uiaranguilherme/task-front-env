@@ -1,6 +1,5 @@
 # Hello Word
-
-    Meu nome é Uiaran e este é meu bloco de Tarefas...
+Meu nome é Uiaran e este é meu bloco de Tarefas...
 
 ## Funcionalidades desta aplicação: 
 
@@ -15,37 +14,25 @@
    Organizar futuros projetos e colaboradores dos projetos. Organizar dinamicamente todos os processos na criação e manutenção dos projetos.
 
 ## Bibliotecas Utilizadas:
-
-    `yarn add bcrypt @types/bcrypt
-    ou
-    npm i bcrypt @types/bcrypt`
     
-    `yarn add express @types/express
-    ou
-    npm i express @types/express`
+   #### -> [axios](https://www.npmjs.com/package/axios)
+    npm i axios
     
-    `yarn add jsonwebtoken @types/jsonwebtoken
-    ou
-    npm i jsonwebtoken @types/jsonwebtoken`
+   #### -> [react-icon](https://www.npmjs.com/package/react-icons)
+    npm i react-icons
     
-    `yarn add nodemailer
-    ou
-    npm i nodemailer`
+   #### -> [styled-components](https://www.npmjs.com/package/styled-components)
+    npm i styled-components
     
-    `yarn add swagger-ui-express @types/swagger-ui-express
-    ou
-    npm i swagger-ui-express @types/swagger-ui-express`
-    
-    `yarn add typescript
-    ou
-    npm i typescript`
 
 ## Principais Técnologias utilizadas:
 
-    2 - Node JS
+    1 - Node JS
+    2 - Typescript
     3 - Express
     4 - Banco de dados MongoDB
 
+## Redes Sociais:
 <a href="https://www.linkedin.com/in/uiarancampos/">
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png?w=740&t=st=1675735110~exp=1675735710~hmac=d186a097074a3ccd71337ecfb5c4a3dd3237b5558736a9156d83a381cb5237b5" heigth="50px" width="50px" />
 </a>
