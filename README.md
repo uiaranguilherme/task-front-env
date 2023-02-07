@@ -45,5 +45,7 @@
     2 - Node JS
     3 - Express
     4 - Banco de dados MongoDB
-    
-[Linkedin](https://www.linkedin.com/in/uiarancampos/)<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png?w=740&t=st=1675735110~exp=1675735710~hmac=d186a097074a3ccd71337ecfb5c4a3dd3237b5558736a9156d83a381cb5237b5" heigth="70px" width="70px" />
+
+<a href="https://www.linkedin.com/in/uiarancampos/">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png?w=740&t=st=1675735110~exp=1675735710~hmac=d186a097074a3ccd71337ecfb5c4a3dd3237b5558736a9156d83a381cb5237b5" heigth="50px" width="50px" />
+</a>
