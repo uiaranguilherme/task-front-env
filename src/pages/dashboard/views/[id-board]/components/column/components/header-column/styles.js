@@ -5,6 +5,7 @@ export const WhapperHeaderColumn = styled.span`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
   height: 3rem;
   width: 100%;
   border-radius: 6px;

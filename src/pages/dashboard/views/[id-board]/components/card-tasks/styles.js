@@ -7,8 +7,8 @@ export const WhapperCardTask = styled.div`
   padding: 5px 3px;
   margin: 5px 0;
   width: 100%;
-  background-color: ${(props) => props.theme.secundary.backgroundContrast};
-  border-radius: 3px;
+  background-color: ${(props) => props.theme.secundary.background};
+  border-radius: 10px;
   border-color: ${(props) => props.color};
   border-style: solid;
   border-width: 5px 1px 1px 1px;

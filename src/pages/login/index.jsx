@@ -1,5 +1,4 @@
 import React, { lazy, Suspense } from "react"
-import Card from "../../components/card/styles"
 import { ContainerLoginPage } from './styles'
 import { Outlet, Route, Routes } from 'react-router-dom'
 import LazySuspense from "../../components/lazy-suspense"

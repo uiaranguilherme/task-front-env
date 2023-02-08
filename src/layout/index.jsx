@@ -18,8 +18,8 @@ const Layout = ({
                 {visibleMenuBar && 
                     <MenuBar
                         buttons={[
-                            {   Icon: BsKanban, title: 'Kanban Board'   },
-                            {   Icon: BsListTask, title: 'Tasks Board'  }
+                            {   Icon: BsKanban, title: 'Kanban Board', href: '/dashboard/board/kanban' },
+                            {   Icon: BsListTask, title: 'Tasks Board', href: '/dashboard/board/sprint' }
                         ]}
                     />
                 }

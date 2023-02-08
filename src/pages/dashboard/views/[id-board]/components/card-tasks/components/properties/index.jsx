@@ -1,5 +1,5 @@
 import { WhapperInfoTask, Box, Label, Input, Select } from'./styles'
-import { formatDate } from '../../../../../utils/formatDate';
+import { formatDate } from '../../../../../../utils/formatDate';
 import React from 'react'
 
 const Properties = (props) => {

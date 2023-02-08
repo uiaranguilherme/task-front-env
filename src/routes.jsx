@@ -1,8 +1,10 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom'
+import { Kanban, Sprint} from './pages/dashboard'
 import Login from './pages/login'
-import { BoardPerId, Projetos } from './pages/dashboard'
-import LazySuspense from './components/lazy-suspense'
+import { Projetos } from './pages/dashboard'
+import BoardPerId from './pages/dashboard/views/[id-board]'
 import React from 'react'
+import NotFound from './pages/not-found'
 
 const routes = createBrowserRouter([
     {
@@ -17,15 +19,33 @@ const routes = createBrowserRouter([
                 element: <Projetos/>
             },
             {
-                path: ':id',
-                element: <BoardPerId/>
+                path: 'board/*',
+                element: <BoardPerId/>,
+                children: [
+                    {
+                        path: "kanban",
+                        element: <Kanban/>
+                    },
+                    {
+                        path: "sprint",
+                        element: <Sprint/>
+                    },
+                    {
+                        path: "*",
+                        element: <Navigate to="/dashboard"/>
+                    }
+                ]
             },
+            {
+                path: "*",
+                element: <NotFound/>
+            }
         ]
     },
     {
-        path: '/teste',
-        element: <LazySuspense/>
-    },
+        path: "*",
+        element: <NotFound/>
+    }
 ])
 
 const Routes = () => <RouterProvider router={routes} />

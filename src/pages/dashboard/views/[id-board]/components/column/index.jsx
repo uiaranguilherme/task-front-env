@@ -1,8 +1,8 @@
 import React from "react"
-import { WhapperColumn, Footer } from "./styles";
-import HeaderColumn from './components/header-column'
-import CardTasks from "../../../components/card-tasks";
 import { Droppable } from "react-beautiful-dnd";
+import { WhapperColumn } from "./styles";
+import HeaderColumn from './components/header-column'
+import CardTasks from "../card-tasks";
 
 const Column = ({columnProps, tasks, ...restProps}) => {
 

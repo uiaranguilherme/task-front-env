@@ -9,7 +9,7 @@ export const WhapperReponsabilyUser = styled.div`
 export const Container = styled.div`
   position: absolute;
   width: 100%;
-  background-color: ${(props) => props.theme.secundary.backgroundContrast};
+  background-color: ${(props) => props.theme.secundary.background};
   border: 1px solid transparent;
 
   &:hover {

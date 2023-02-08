@@ -1,10 +1,10 @@
-import Layout from "../../../../layout"
+import React, { Suspense, useState, lazy } from "react"
+import LazySuspense from '../../../../components/lazy-suspense'
 import { BsFolderPlus } from "react-icons/bs"
-import ModalCreateProject from "./components/modal-create-project"
-import { useState } from "react"
+import { WhapperProject } from './styles'
+import Layout from "../../../../layout"
 import Folder from "./components/folder"
-import { WhapperProject } from './styles';
-import React from 'react'
+import ModalCreateProject from "./components/modal-create-project"
 
 export const Projetos = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,19 +36,21 @@ export const Projetos = () => {
     ]
 
     return(
-        <Layout
-            visibleMenuBar={false}
-            buttonsSubHeader={buttonsSubHeader}
-        >
-            <WhapperProject>
-                {
-                    folders.map((_, index) => <Folder {..._}/>)
-                }
-            </WhapperProject>
-            <ModalCreateProject
-                open={isOpen}
-                onChangeModal={onChangeModal}
-            />
-        </Layout>
+        <Suspense fallback={<LazySuspense/>}>
+            <Layout
+                visibleMenuBar={false}
+                buttonsSubHeader={buttonsSubHeader}
+            >
+                <WhapperProject>
+                    {
+                        folders.map((_, index) => <Folder {..._}/>)
+                    }
+                </WhapperProject>
+                <ModalCreateProject
+                    open={isOpen}
+                    onChangeModal={onChangeModal}
+                />
+            </Layout>
+        </Suspense>
     )
 }

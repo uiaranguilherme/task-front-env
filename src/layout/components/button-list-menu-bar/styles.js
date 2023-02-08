@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ItemButton = styled.button`
+export const ItemButton = styled.a`
   cursor: pointer;
   display: flex;
   align-items: center;

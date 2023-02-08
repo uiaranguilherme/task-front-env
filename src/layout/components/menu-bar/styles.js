@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerMenuBar = styled.div`
   min-width: 15rem;
   height: 100%;
-  background-color: ${(props) => props.theme.secundary.background};
+  background-color: ${(props) => props.theme.primary.background2};
   border-right: 0.5px solid ${(props) => props.theme.secundary.contrastColor};
 
   -webkit-box-shadow: 13px 0px 38px -32px rgba(0, 0, 0, 0.59);

@@ -8,7 +8,3 @@ export const WhapperColumn = styled.div`
   margin: 0 1px;
   background-color: ${(props) => props.theme.secundary.background};
 `;
-
-export const Footer = styled.div`
-  height: 10px;
-`;

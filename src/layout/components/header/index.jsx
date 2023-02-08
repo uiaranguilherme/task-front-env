@@ -14,7 +14,7 @@ const Header = () => {
             <NavHeader>
                 <Links>
                     <NavLink
-                        href="dashboard"
+                        href="/dashboard"
                     >
                         Projetos
                     </NavLink>
