@@ -20,7 +20,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -65,7 +80,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -116,7 +146,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -161,7 +206,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -212,7 +272,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -257,7 +332,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -308,7 +398,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",
@@ -353,7 +458,22 @@ export const dataMock = {
             email: "uiaran@hotmail.com",
           },
           tags: ["Portal Pós Venda"],
-          childs: [],
+          childs: [
+            {
+              _id: uuidv4(),
+              title: "[PORTAL DIGITAL] - Login",
+              description:
+                "Realizar login na plataforma com altenticação de dois fatores",
+              author: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+              responsible: {
+                name: "Uiaran Guilherme",
+                email: "uiaran@hotmail.com",
+              },
+            },
+          ],
           properties: {
             changeAt: new Date().toLocaleDateString({
               year: "numeric",

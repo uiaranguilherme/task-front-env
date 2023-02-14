@@ -3,7 +3,7 @@ import Columns from "../../components/column"
 import ColumnFinish from '../../components/column-finish'
 import ColumnBacklog from '../../components/column-backlog'
 import { DragDropContext } from "react-beautiful-dnd"
-import { dataMock } from '../../../mock/data'
+import { dataMock } from './mock/data'
 
 const Kanban = () => {
     const [data, setData] = useState(dataMock);
