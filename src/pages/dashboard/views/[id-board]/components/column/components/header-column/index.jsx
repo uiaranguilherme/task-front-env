@@ -1,10 +1,10 @@
 import React from "react"
 import { WhapperHeaderColumn, ColumnName, ColumnCapacity } from './styles'
 
-const HeaderColumn = ({children, columnTitle, capacity, limit, desableBackground, restProps}) => {
+const HeaderColumn = ({children, columnTitle, capacity, limit, desableBackground, width, ...restProps}) => {
     return(
-        <WhapperHeaderColumn 
-            {...restProps} 
+        <WhapperHeaderColumn
+            {...restProps}
             desableBackground={desableBackground}
         >
             <ColumnName title={columnTitle}>

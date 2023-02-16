@@ -29,18 +29,30 @@ const CardTasks = (props) => {
                     {...provided.draggableProps}
                     ref={provided.innerRef}
                 >
-                    <HeaderTask
-                        {...props}
-                    />
-                    <Responsable
-                        {...props.responsable}
-                    />
-                    <Properties
-                        {...props.properties}
-                    />
-                    <Childs
-                        {...props.childs}
-                    />
+                    {
+                        props.title &&
+                        <HeaderTask
+                            {...props}
+                        />
+                    }
+                    {
+                        props.responsable &&
+                        <Responsable
+                            {...props.responsable}
+                        />
+                    }
+                    {
+                        props.properties &&
+                        <Properties
+                            {...props.properties}
+                        />
+                    }
+                    {
+                        props.childs &&
+                        <Childs
+                            {...props.childs}
+                        />
+                    }
                 </WhapperCardTask>
             )}
         </Draggable>

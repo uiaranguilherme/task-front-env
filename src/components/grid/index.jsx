@@ -1,18 +1,41 @@
-import React from 'react'
-import { WhapperGridContainer, WhapperGridItem } from './styles'
+import React, { useEffect, useState } from 'react'
+import { WhapperGridContainer, WhapperGridItem, WhapperTemplateAreaContainer, WhapperTemplateArea } from './styles'
 
-const Grid = ({children, container, coll, ...restProps}) => {
+const Grid = ({children, variant, coll, ...restProps}) => {
 
-    if(container === false && typeof coll !== 'number'){
+    if(variant === 'container' && typeof coll !== 'number'){
         return new Error("A propriedade coll tem que ser do tipo number...")
     }
 
-    if(container){
-        return(
-            <WhapperGridContainer {...restProps}>
-                {children}
-            </WhapperGridContainer>
-        );
+    if(variant === 'template-area-container'){
+        if(!restProps['total-columns']){
+            return new Error("A propriedade total-columns tem que ser configurada...")
+        }
+
+        if(!restProps['large-columns']){
+            return new Error("A propriedade large-columns tem que ser configurada...")
+        }
+    }
+
+    switch(variant){
+        case 'container': 
+            return(
+                <WhapperGridContainer {...restProps}>
+                    {children}
+                </WhapperGridContainer>
+            )
+        case 'template-area-container': 
+            return(
+                <WhapperTemplateAreaContainer {...restProps}>
+                    {children}
+                </WhapperTemplateAreaContainer>
+            )
+        case 'template-area':
+            return(
+                <WhapperTemplateArea {...restProps}>
+                    {children}
+                </WhapperTemplateArea>
+            )
     }
     
     return(

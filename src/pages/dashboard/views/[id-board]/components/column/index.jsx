@@ -4,8 +4,8 @@ import { WhapperColumn } from "./styles";
 import HeaderColumn from './components/header-column'
 import CardTasks from "../card-tasks";
 
-const Column = ({columnProps, tasks, ...restProps}) => {
-
+const Column = ({columnProps, tasks, headerCollumn, ...restProps}) => {
+    
     return(
         <Droppable droppableId={columnProps.id} key={restProps.index}>
             {(provided) => (
@@ -13,12 +13,14 @@ const Column = ({columnProps, tasks, ...restProps}) => {
                     ref={provided.innerRef}
                     {...provided.droppableProps}
                 >
-                    <HeaderColumn
-                        capacity={10}
-                        limit={20}
-                        columnTitle={columnProps.name}
-                        key={columnProps.id}
-                    />
+                    {headerCollumn && (
+                        <HeaderColumn
+                            capacity={10}
+                            limit={20}
+                            columnTitle={columnProps.name}
+                            key={columnProps.id}
+                        />
+                    )}
                     {tasks.map((task, index) => <CardTasks index={index} {...task} key={index}/>)}
                     {provided.placeholder}
                 </WhapperColumn>
