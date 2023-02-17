@@ -5,6 +5,7 @@ const HeaderColumn = ({children, columnTitle, capacity, limit, desableBackground
     return(
         <WhapperHeaderColumn
             {...restProps}
+            totalColumns={restProps.totalColumns}
             desableBackground={desableBackground}
         >
             <ColumnName title={columnTitle}>

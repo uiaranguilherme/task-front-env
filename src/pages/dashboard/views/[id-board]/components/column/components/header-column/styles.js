@@ -5,9 +5,10 @@ export const WhapperHeaderColumn = styled.span`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5px;
+  margin: 5px 2px;
   height: 3rem;
-  width: 100%;
+  min-width: ${(props) =>
+    props.totalColumns === 4 ? "calc((100%/4) - 4px)" : "15rem"};
   border-radius: 6px;
   border: ${(props) =>
     props.desableBackground ? "" : "1px solid rgba(42, 90, 218, 0.5)"};

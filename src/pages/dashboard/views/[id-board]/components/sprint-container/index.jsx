@@ -5,9 +5,8 @@ import Typography from '../../../../../../components/typograpfy'
 import { DragDropContext } from "react-beautiful-dnd";
 import Column from "../column";
 
-const SprintContainer = ({title, orderColumn, task, ...restProps}) => {
+const SprintContainer = ({orderColumn, task, ...restProps}) => {
     const [isOpen, setOpen] = useState(false);
-
     const dragEnd = result => {
         console.log(result)
     }
@@ -16,29 +15,30 @@ const SprintContainer = ({title, orderColumn, task, ...restProps}) => {
         <ContainerSprint>
             <HeaderSprint>
                 {isOpen ? <IoIosArrowDown/> : <IoIosArrowForward/>}
-                <Typography component="h4">{title}</Typography>
+                <Typography component="h4">{task.title}</Typography>
             </HeaderSprint>
-            <ContentSprint>
-                <DragDropContext
-                    onDragEnd={dragEnd}
-                >
-                    {
-                        orderColumn.map((column, index) => {
-                            const childTasks = task.childs[column.title]
-
-                            return(
-                                <Column
-                                    index={index}
-                                    key={index}
-                                    columnProps={column}
-                                    headerCollumn={false}
-                                    tasks={childTasks !== undefined ? childTasks : []}
-                                />
-                            )
-                        })
-                    }
-                </DragDropContext>
-            </ContentSprint>
+            <DragDropContext
+                onDragEnd={dragEnd}
+            >
+                <ContentSprint>
+                {
+                    orderColumn.map((column, index) => {
+                        const childTasks = task.childs[column.title]
+                        
+                        return(
+                            <Column
+                                style={{width: '350px'}}
+                                index={index}
+                                key={index}
+                                columnProps={column}
+                                headerCollumn={false}
+                                tasks={childTasks !== undefined ? childTasks : []}
+                            />
+                        )
+                    })
+                }
+                </ContentSprint>
+            </DragDropContext>
         </ContainerSprint>
     )
 }

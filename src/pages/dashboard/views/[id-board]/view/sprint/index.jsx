@@ -5,13 +5,14 @@ import SprintContainer from "../../components/sprint-container"
 import HeaderColumn from "../../components/column/components/header-column"
 
 const Sprint = () => {
+    
     return(
         <WhapperSprint>
             <HeaderSprint>
                 {orderColumn.map( column => (
                     <HeaderColumn
+                        totalColumns={orderColumn.length}
                         key={column.id}
-                        style={{width: '350px'}}
                         columnTitle={column.title}
                     />
                 ))}

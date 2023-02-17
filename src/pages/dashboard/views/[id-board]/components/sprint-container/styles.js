@@ -16,4 +16,8 @@ export const ContainerSprint = styled.div`
   padding: 3px;
   margin-top: 5px;
 `;
-export const ContentSprint = styled.div``;
+export const ContentSprint = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+`;

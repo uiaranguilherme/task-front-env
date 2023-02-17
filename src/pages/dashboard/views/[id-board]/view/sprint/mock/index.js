@@ -3,15 +3,19 @@ import { v4 as uuidv4 } from "uuid";
 export const orderColumn = [
   {
     id: uuidv4(),
-    title: "column1",
+    title: "Pronto pra Desenvolvimento",
   },
   {
     id: uuidv4(),
-    title: "column2",
+    title: "Em Desenvolvimento",
   },
   {
     id: uuidv4(),
-    title: "column3",
+    title: "Em Teste",
+  },
+  {
+    id: uuidv4(),
+    title: "Concluido",
   },
 ];
 
@@ -20,7 +24,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column1: [
+      "Pronto pra Desenvolvimento": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -42,7 +46,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Pronto pra Desenvolvimento": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -64,7 +68,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Em Teste": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -86,7 +90,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Em Teste": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -109,7 +113,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Em Teste": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -131,7 +135,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Em Teste": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -153,7 +157,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Em Teste": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
@@ -175,7 +179,7 @@ export const dataMock = [
     _id: uuidv4(),
     title: "[PORTAL DIGITAL] - Login",
     childs: {
-      column3: [
+      "Em Teste": [
         {
           _id: uuidv4(),
           title: "[PORTAL DIGITAL] - Login",
