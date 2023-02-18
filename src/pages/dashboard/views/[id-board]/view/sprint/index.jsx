@@ -5,21 +5,23 @@ import SprintContainer from "../../components/sprint-container"
 import HeaderColumn from "../../components/column/components/header-column"
 
 const Sprint = () => {
-    
+
     return(
         <WhapperSprint>
             <HeaderSprint>
                 {orderColumn.map( column => (
                     <HeaderColumn
-                        totalColumns={orderColumn.length}
                         key={column.id}
                         columnTitle={column.title}
+                        totalColumns={orderColumn.length}
                     />
                 ))}
             </HeaderSprint>
             {
                 dataMock.map((task, index) => (
-                    <Columns>
+                    <Columns
+                        totalColumns={orderColumn.length}
+                    >
                         <SprintContainer orderColumn={orderColumn} key={index} task={task}/>
                     </Columns>
                 ))

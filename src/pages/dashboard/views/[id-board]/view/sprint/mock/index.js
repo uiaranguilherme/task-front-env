@@ -17,6 +17,10 @@ export const orderColumn = [
     id: uuidv4(),
     title: "Concluido",
   },
+  {
+    id: uuidv4(),
+    title: "Concluido",
+  },
 ];
 
 export const dataMock = [

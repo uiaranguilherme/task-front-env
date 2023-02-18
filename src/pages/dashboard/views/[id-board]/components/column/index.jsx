@@ -5,13 +5,14 @@ import HeaderColumn from './components/header-column'
 import CardTasks from "../card-tasks";
 
 const Column = ({columnProps, tasks, headerCollumn, ...restProps}) => {
-    
+    console.log(columnProps.orderColumn.length);
     return(
         <Droppable droppableId={columnProps.id} key={restProps.index}>
             {(provided) => (
                 <WhapperColumn
                     ref={provided.innerRef}
                     {...provided.droppableProps}
+                    quantityColumn={columnProps.orderColumn.length}
                 >
                     {headerCollumn && (
                         <HeaderColumn

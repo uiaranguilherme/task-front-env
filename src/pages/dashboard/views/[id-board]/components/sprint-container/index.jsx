@@ -12,7 +12,9 @@ const SprintContainer = ({orderColumn, task, ...restProps}) => {
     }
     
     return(
-        <ContainerSprint>
+        <ContainerSprint 
+            totalColumns={orderColumn.length}
+        >
             <HeaderSprint>
                 {isOpen ? <IoIosArrowDown/> : <IoIosArrowForward/>}
                 <Typography component="h4">{task.title}</Typography>
@@ -24,13 +26,16 @@ const SprintContainer = ({orderColumn, task, ...restProps}) => {
                 {
                     orderColumn.map((column, index) => {
                         const childTasks = task.childs[column.title]
-                        
+
                         return(
                             <Column
                                 style={{width: '350px'}}
                                 index={index}
                                 key={index}
-                                columnProps={column}
+                                columnProps={{
+                                    ...column,
+                                    orderColumn,
+                                }}
                                 headerCollumn={false}
                                 tasks={childTasks !== undefined ? childTasks : []}
                             />
