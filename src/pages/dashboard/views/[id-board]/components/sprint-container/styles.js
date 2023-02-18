@@ -4,7 +4,8 @@ export const HeaderSprint = styled.div`
   display: flex;
   align-items: center;
   padding: 3px 3px 5px 3px;
-  border-bottom: 1px solid ${(props) => props.theme.primary.contrastColor};
+  border-bottom: ${(props) =>
+    props.isOpen ? "1px solid rgba(1, 1, 1, 0.2)" : "none"};
 
   svg {
     cursor: pointer;
@@ -19,7 +20,13 @@ export const ContainerSprint = styled.div`
   margin: 5px 2px 0 2px;
   border-radius: 3px;
 `;
+
 export const ContentSprint = styled.div`
-  display: flex;
+  display: ${(props) => (props.isOpen ? "flex" : "none")};
   height: 100vh;
+`;
+
+export const OpenContainerCard = styled.div`
+  display: flex;
+  align-items: center;
 `;

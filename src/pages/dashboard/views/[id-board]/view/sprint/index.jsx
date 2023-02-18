@@ -7,7 +7,9 @@ import HeaderColumn from "../../components/column/components/header-column"
 const Sprint = () => {
 
     return(
-        <WhapperSprint>
+        <WhapperSprint
+            totalColumns={orderColumn.length}
+        >
             <HeaderSprint>
                 {orderColumn.map( column => (
                     <HeaderColumn

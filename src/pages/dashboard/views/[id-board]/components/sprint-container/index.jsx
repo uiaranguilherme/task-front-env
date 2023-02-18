@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { HeaderSprint, ContainerSprint, ContentSprint, Columns } from './styles'
+import { HeaderSprint, ContainerSprint, ContentSprint, Columns, OpenContainerCard } from './styles'
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import Typography from '../../../../../../components/typograpfy'
 import { DragDropContext } from "react-beautiful-dnd";
@@ -15,14 +15,22 @@ const SprintContainer = ({orderColumn, task, ...restProps}) => {
         <ContainerSprint 
             totalColumns={orderColumn.length}
         >
-            <HeaderSprint>
-                {isOpen ? <IoIosArrowDown/> : <IoIosArrowForward/>}
+            <HeaderSprint
+                isOpen={isOpen}
+            >
+                <OpenContainerCard 
+                    onClick={() => setOpen(!isOpen)}
+                >
+                    {isOpen ? <IoIosArrowDown/> : <IoIosArrowForward/>}
+                </OpenContainerCard>
                 <Typography component="h4">{task.title}</Typography>
             </HeaderSprint>
             <DragDropContext
                 onDragEnd={dragEnd}
             >
-                <ContentSprint>
+                <ContentSprint
+                    isOpen={isOpen}
+                >
                 {
                     orderColumn.map((column, index) => {
                         const childTasks = task.childs[column.title]

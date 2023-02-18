@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const WhapperSprint = styled.div`
+  background-color: yellow;
   display: flex;
+  min-width: ${(props) =>
+    props.totalColumns <= 4 ? "-webkit-fill-available" : ""};
   width: auto;
-  min-width: -webkit-fill-available;
   flex-direction: column;
   background-color: ${(props) => props.theme.primary.background2};
 `;
@@ -15,6 +17,5 @@ export const HeaderSprint = styled.div`
 export const Columns = styled.div`
   display: flex;
   flex-direction: column;
-  width: ${(props) => (props.totalColumns <= 4 ? "auto" : "fit-content")};
-  height: 100%;
+  width: ${(props) => (props.totalColumns >= 4 ? "auto" : "fit-content")};
 `;

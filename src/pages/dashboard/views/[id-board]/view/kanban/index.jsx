@@ -18,10 +18,14 @@ const Kanban = () => {
             <ColumnBacklog/>
             {data.columnOrder.map((columnName, index) => {
                 const column = data.columns[columnName];
-                const tasks = column.tasks
+                const tasks = column.tasks;
+
                 return(
                     <Columns
-                        columnProps={column}
+                        columnProps={{
+                            ...column,
+                            orderColumn: data.columnOrder
+                        }}
                         tasks={tasks}
                         index={index}
                         key={index}
