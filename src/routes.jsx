@@ -1,9 +1,10 @@
+import React from 'react'
 import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom'
-import { Kanban, Sprint} from './pages/dashboard'
-import Login from './pages/login'
+import { Kanban, Sprint } from './pages/dashboard'
 import { Projetos } from './pages/dashboard'
 import BoardPerId from './pages/dashboard/views/[id-board]'
-import React from 'react'
+import Login from './pages/login'
+import Pessoas from './pages/dashboard/views/peoples'
 import NotFound from './pages/not-found'
 
 const routes = createBrowserRouter([
@@ -12,11 +13,15 @@ const routes = createBrowserRouter([
         element: <Login/>
     },
     {
-        path: '/dashboard',
+        path: 'dashboard',
         children: [
             {
                 index: true,
                 element: <Projetos/>
+            },
+            {
+                path: 'peoples',
+                element: <Pessoas/>
             },
             {
                 path: 'board/*',
