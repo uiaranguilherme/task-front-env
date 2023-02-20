@@ -13,6 +13,15 @@ const Tolls = () => {
                 wd='2.5rem'
                 title="Deletar"
             >
+                <BiEdit
+                    style={{height: '1.3rem', width: '1.3rem'}}
+                />
+            </ButtonIcon>
+            <ButtonIcon
+                hg='2.5rem'
+                wd='2.5rem'
+                title="Deletar"
+            >
                 <MdDelete
                     style={{height: '1.3rem', width: '1.3rem'}}
                 />

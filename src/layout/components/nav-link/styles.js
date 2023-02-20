@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Link = styled.li`
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 5rem;
-  margin: 3px;
+  width: auto;
+  margin: 3px 19px 3px 3px;
   border-bottom: 3px solid transparent;
   color: ${(props) => props.theme.primary.button};
   font-size: 1.1rem;

@@ -20,7 +20,7 @@ const routes = createBrowserRouter([
                 element: <Projetos/>
             },
             {
-                path: 'peoples',
+                path: 'colaboradores',
                 element: <Pessoas/>
             },
             {

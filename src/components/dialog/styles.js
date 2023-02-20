@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const WhapperDialog = styled.div`
+export const WhapperDialog = styled.dialog`
   position: absolute;
   display: ${(props) => (props.open ? "flex" : "none")};
   justify-content: center;

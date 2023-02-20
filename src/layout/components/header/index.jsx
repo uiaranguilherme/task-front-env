@@ -19,9 +19,9 @@ const Header = () => {
                         Projetos
                     </NavLink>
                     <NavLink
-                        href="/dashboard/peoples"
+                        href="/dashboard/colaboradores"
                     >
-                        Pessoas
+                        Colaboradores
                     </NavLink>
                 </Links>
                 <UserArea>
