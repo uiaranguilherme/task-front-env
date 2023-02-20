@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const AvatarArea = styled.div`
   cursor: pointer;
-  min-height: ${(props) => props.sizePx};
-  min-width: ${(props) => props.sizePx};
+  height: ${(props) => props.sizePx};
+  width: ${(props) => props.sizePx};
   display: flex;
   align-items: center;
   justify-content: center;

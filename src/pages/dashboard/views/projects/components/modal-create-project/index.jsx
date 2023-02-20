@@ -9,7 +9,7 @@ import BoxSolid from "./components/box-solid"
 const styled = {
     card: {
         'width': '60%',
-        'background-color': '#FFFD',
+        'background-color': '#FFF',
         'justify-content': 'start'
     },
     gridContainer: {
@@ -43,7 +43,7 @@ const ModalCreateProject = ({open, onChangeModal}) => {
             <TitleModalCreate>
                 Criação de Projeto 
             </TitleModalCreate>
-            <Grid style={styled.gridContainer} container spaces={2}>
+            <Grid style={styled.gridContainer} variant='container' spaces={2}>
                 <Grid item coll={8}>
                     <Input fullWidth name="nome-projeto" placeholder="Nome do Projeto*"/>
                 </Grid>
@@ -60,7 +60,7 @@ const ModalCreateProject = ({open, onChangeModal}) => {
                     <Input type="date" fullWidth name="data-inicio-projeto" placeholder="Data de Inicio*"/>
                 </Grid>
             </Grid>
-            <Grid container>
+            <Grid variant='container'>
                 <Grid item coll={12}>
                     <BoxSolid title="Adicionar Colaboradores" >
                         <Box>

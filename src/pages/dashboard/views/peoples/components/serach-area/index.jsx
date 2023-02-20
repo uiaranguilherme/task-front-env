@@ -7,7 +7,7 @@ const ShearchArea = () => {
     return(
         <WhapperShearch>
             <Input
-                style={{width: '20rem'}}
+                style={{width: '60%', height: '2.2rem', 'border-color': "rgba(1, 1, 1, 0.2)"}}
                 placeholder="Pesquisar Pessoas ?"
             />
             <Button

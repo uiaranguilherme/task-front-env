@@ -4,7 +4,7 @@ export const TextField = styled.input`
   height: 2rem;
   border-radius: 5px;
   padding-left: 10px;
-  border: 1px solid #fcfcfc;
+  border: 1px solid ${(props) => props.theme.primary.contrastColor};
   color: black;
   margin: 5px 0;
   width: ${(props) => (props.fullWidth ? "100%" : "")};

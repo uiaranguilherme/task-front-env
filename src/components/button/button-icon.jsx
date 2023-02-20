@@ -1,4 +1,5 @@
 import { ButtonIcon } from './styles'
+import React from 'react'
 
 const IconButton = ({children, ...restProps}) => {
     return(
@@ -7,3 +8,5 @@ const IconButton = ({children, ...restProps}) => {
         </ButtonIcon>
     )
 }
+
+export default IconButton;

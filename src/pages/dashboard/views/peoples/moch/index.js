@@ -269,7 +269,7 @@ export const projetos = [
     name: "Photo Pro",
     users: [
       {
-        name: "Uiaran Guilherme",
+        name: "Uiaran",
         email: "uiaran@hotmail.com",
       },
       {

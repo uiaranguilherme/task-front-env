@@ -3,10 +3,6 @@ import { WhapperGridContainer, WhapperGridItem, WhapperTemplateAreaContainer, Wh
 
 const Grid = ({children, variant, coll, ...restProps}) => {
 
-    if(variant === 'container' && typeof coll !== 'number'){
-        return new Error("A propriedade coll tem que ser do tipo number...")
-    }
-
     if(variant === 'template-area-container'){
         if(!restProps['total-columns']){
             return new Error("A propriedade total-columns tem que ser configurada...")

@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import ReactDom from "react-dom"
 import { WhapperDialog } from './styles'
 import Card from '../card/styles'
-import { useState } from "react"
 
 const Dialog = ({children, open, cardProps}) => {
 
