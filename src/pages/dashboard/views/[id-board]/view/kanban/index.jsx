@@ -4,6 +4,7 @@ import ColumnFinish from '../../components/column-finish'
 import ColumnBacklog from '../../components/column-backlog'
 import { DragDropContext } from "react-beautiful-dnd"
 import { dataMock } from './mock/data'
+import { Outlet } from "react-router-dom"
 
 const Kanban = () => {
     const [data, setData] = useState(dataMock);
@@ -33,6 +34,7 @@ const Kanban = () => {
                 )
             })}
             <ColumnFinish/>
+            <Outlet/>
         </DragDropContext>
     )
 }

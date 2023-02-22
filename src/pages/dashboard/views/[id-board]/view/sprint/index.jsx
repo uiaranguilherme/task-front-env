@@ -3,6 +3,7 @@ import { WhapperSprint, HeaderSprint, Columns } from './styles'
 import { dataMock, orderColumn } from './mock/index'
 import SprintContainer from "../../components/sprint-container"
 import HeaderColumn from "../../components/column/components/header-column"
+import { Outlet } from "react-router-dom"
 
 const Sprint = () => {
 
@@ -28,6 +29,7 @@ const Sprint = () => {
                     </Columns>
                 ))
             }
+            <Outlet/>
         </WhapperSprint>
     );
 }
