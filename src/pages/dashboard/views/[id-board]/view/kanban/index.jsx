@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Columns from "../../components/column";
-import ColumnFinish from "../../components/column-finish";
-import ColumnBacklog from "../../components/column-backlog";
 import { DragDropContext } from "react-beautiful-dnd";
 import { dataMock } from "./mock/data";
 import { Outlet } from "react-router-dom";
+import CardTasks from "../../components/card-tasks";
 
 const Kanban = () => {
   const [data, setData] = useState(dataMock);
@@ -15,25 +14,27 @@ const Kanban = () => {
   return (
     <>
       <DragDropContext onDragEnd={dragEnd}>
-        <ColumnBacklog />
         {data.columnOrder.map((columnName, index) => {
-          const column = data.columns[columnName];
+          const column = data.columns[columnName.title];
           const tasks = column.tasks;
 
           return (
             <Columns
+              {...columnName}
               headerCollumn
               columnProps={{
                 ...column,
                 orderColumn: data.columnOrder,
               }}
-              tasks={tasks}
               index={index}
               key={index}
-            />
+            >
+              {tasks.map((task, index) => (
+                <CardTasks index={index} {...task} key={index} />
+              ))}
+            </Columns>
           );
         })}
-        <ColumnFinish />
       </DragDropContext>
       <Outlet />
     </>

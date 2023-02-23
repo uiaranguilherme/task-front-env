@@ -2,9 +2,10 @@ import { v4 as uuidv4 } from "uuid";
 
 export const dataMock = {
   columns: {
-    "column-1": {
-      name: "Em Análise",
-      id: uuidv4(),
+    Backlog: {
+      tasks: [],
+    },
+    "Em Análise": {
       tasks: [
         {
           _id: uuidv4(),
@@ -128,9 +129,7 @@ export const dataMock = {
         },
       ],
     },
-    "column-2": {
-      name: "Executando",
-      id: uuidv4(),
+    Executando: {
       tasks: [
         {
           _id: uuidv4(),
@@ -254,9 +253,7 @@ export const dataMock = {
         },
       ],
     },
-    "column-3": {
-      name: "Teste Done",
-      id: uuidv4(),
+    Teste: {
       tasks: [
         {
           _id: uuidv4(),
@@ -380,9 +377,7 @@ export const dataMock = {
         },
       ],
     },
-    "column-4": {
-      name: "Finalizado",
-      id: uuidv4(),
+    "Em HML": {
       tasks: [
         {
           _id: uuidv4(),
@@ -505,9 +500,43 @@ export const dataMock = {
           ],
         },
       ],
+    },
+    Finalizado: {
+      tasks: [],
     },
   },
-  columnOrder: ["column-1", "column-2", "column-3", "column-4"],
+  columnOrder: [
+    {
+      id: uuidv4(),
+      title: "Backlog",
+      type: "backlog",
+    },
+    {
+      id: uuidv4(),
+      title: "Em Análise",
+      type: "default",
+    },
+    {
+      id: uuidv4(),
+      title: "Executando",
+      type: "default",
+    },
+    {
+      id: uuidv4(),
+      title: "Teste",
+      type: "default",
+    },
+    {
+      id: uuidv4(),
+      title: "Em HML",
+      type: "default",
+    },
+    {
+      id: uuidv4(),
+      title: "Finalizado",
+      type: "entregue",
+    },
+  ],
 };
 
 /*

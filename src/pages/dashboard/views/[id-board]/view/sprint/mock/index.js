@@ -4,18 +4,22 @@ export const orderColumn = [
   {
     id: uuidv4(),
     title: "Pronto pra Desenvolvimento",
+    type: "add-item",
   },
   {
     id: uuidv4(),
     title: "Em Desenvolvimento",
+    type: "default",
   },
   {
     id: uuidv4(),
     title: "Em Teste",
+    type: "default",
   },
   {
     id: uuidv4(),
     title: "Concluido",
+    type: "default",
   },
 ];
 

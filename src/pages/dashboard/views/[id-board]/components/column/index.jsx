@@ -1,34 +1,22 @@
 import React from "react";
-import { Droppable } from "react-beautiful-dnd";
-import { WhapperColumn } from "./styles";
-import HeaderColumn from "./components/header-column";
-import CardTasks from "../card-tasks";
+import ColumnBacklog from "./columns-type/column-backlog";
+import ColumnDefault from "./columns-type/column-default";
+import ColumnFinish from "./columns-type/column-finish";
+//{tasks.map((task, index) => (
+//  <CardTasks index={index} {...task} key={index} />
+//))}
 
-const Column = ({ columnProps, tasks, headerCollumn, ...restProps }) => {
-  return (
-    <Droppable droppableId={columnProps.id} key={restProps.index}>
-      {(provided) => (
-        <WhapperColumn
-          ref={provided.innerRef}
-          {...provided.droppableProps}
-          quantityColumn={columnProps.orderColumn.length}
-        >
-          {headerCollumn && (
-            <HeaderColumn
-              capacity={10}
-              limit={20}
-              columnTitle={columnProps.name}
-              key={columnProps.id}
-            />
-          )}
-          {tasks.map((task, index) => (
-            <CardTasks index={index} {...task} key={index} />
-          ))}
-          {provided.placeholder}
-        </WhapperColumn>
-      )}
-    </Droppable>
-  );
+const Column = ({ children, type, ...restProps }) => {
+  switch (type) {
+    case "add-item":
+      return <h1>add item</h1>;
+    case "backlog":
+      return <ColumnBacklog {...restProps}>{children}</ColumnBacklog>;
+    case "entregue":
+      return <ColumnFinish {...restProps}>{children}</ColumnFinish>;
+    default:
+      return <ColumnDefault {...restProps}>{children}</ColumnDefault>;
+  }
 };
 
 export default Column;
