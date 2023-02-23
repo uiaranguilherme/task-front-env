@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const WhapperList = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 95%;
   padding: 3px 0;
   border-top: 3px solid ${(props) => props.theme.secundary.backgroundContrast};
 `;
@@ -23,6 +25,5 @@ export const ButtonAddNewTask = styled.button`
   svg {
     height: 1.3rem;
     width: 1.3rem;
-    margin: 0 10px 0 30px;
   }
 `;

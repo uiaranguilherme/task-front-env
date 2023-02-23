@@ -14,7 +14,7 @@ export const Label = styled.div`
 `;
 
 export const Input = styled.input`
-  margin-left: 10px;
+  margin-left: 5px;
   min-width: 7.5rem;
   max-width: 7.5rem;
   background-color: transparent;
@@ -25,7 +25,7 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
-  margin-left: 10px;
+  margin-left: 5px;
   min-width: 7.5rem;
   max-width: 7.5rem;
   background-color: transparent;

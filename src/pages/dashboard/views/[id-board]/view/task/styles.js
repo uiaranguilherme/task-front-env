@@ -16,7 +16,7 @@ export const HeaderTaskView = styled.header`
 export const BodyTaskView = styled.aside`
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 export const ContainerDescriptionAndComents = styled.div`
@@ -27,7 +27,7 @@ export const ContainerPropsAndButtons = styled.footer`
   justify-content: space-between;
   flex-direction: column;
   margin-top: 10px;
-  width: 30%;
+  width: 35%;
 `;
 export const Title = styled.div``;
 
@@ -100,5 +100,6 @@ export const ButtonsArea = styled.div`
   width: 100%;
   justify-content: flex-end;
   padding: 3px 0;
-  border-top: 1px solid ${(props) => props.theme.primary.contrastColor};
+  border-top: ${(props) =>
+    props.borderTop ? `1px solid ${props.theme.primary.contrastColor}` : ""};
 `;

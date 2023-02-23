@@ -8,7 +8,7 @@ export const WhapperHeaderColumn = styled.span`
   margin: 0px 2px;
   height: 3rem;
   min-width: ${(props) =>
-    props.totalColumns === 4 ? "calc((100%/4) - 4px)" : "15rem"};
+    props.totalColumns === 4 ? "calc((100%/4) - 4px)" : "14rem"};
   border-radius: 3px;
   border: ${(props) =>
     props.desableBackground ? "" : "1px solid rgba(42, 90, 218, 0.5)"};

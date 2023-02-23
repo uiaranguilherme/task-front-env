@@ -6,7 +6,7 @@ export const WhapperCardTask = styled.div`
   flex-direction: column;
   padding: 5px 3px;
   margin: 5px 0;
-  width: 100%;
+  width: 95%;
   background-color: ${(props) => props.theme.secundary.background};
   border-radius: 3px;
   border-color: ${(props) => props.color};

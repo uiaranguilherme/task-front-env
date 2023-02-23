@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { AvatarArea } from "./styles";
 import Typography from "../typograpfy";
+import { colors } from "../../mock/colors";
 
 const generateColor = () => {
-  const letters = "0123456789CDEF";
-  let color = "#";
-
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-
-  return color;
+  return colors[Math.floor(Math.random() * colors.length)];
 };
 
 const Avatar = ({ name, size, color }) => {
@@ -50,7 +44,9 @@ const Avatar = ({ name, size, color }) => {
 
   return (
     <AvatarArea color={color ? color : generateColor()} sizePx={sizePx}>
-      <Typography component={component}>{nameSigla}</Typography>
+      <Typography style={{ color: "white" }} component={component}>
+        {nameSigla}
+      </Typography>
     </AvatarArea>
   );
 };

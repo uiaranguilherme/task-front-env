@@ -165,7 +165,7 @@ const TaskView = () => {
                 {clickComent ? (
                   <>
                     <textarea autoFocus />
-                    <ButtonsArea>
+                    <ButtonsArea borderTop>
                       <Button
                         title="Adicionar comentário"
                         style={styleButtonAddComent}
