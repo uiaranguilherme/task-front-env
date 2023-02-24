@@ -10,6 +10,7 @@ export const ItemButton = styled.a`
   margin-top: 5px;
   font-size: 0.9rem;
   background-color: transparent;
+  color: ${(props) => props.theme.primary.button};
 
   &:hover {
     background-color: ${(props) => props.theme.primary.backgroundContrast};
@@ -18,7 +19,7 @@ export const ItemButton = styled.a`
   }
 
   svg {
-    color: ${(props) => props.theme.primary.icon};
+    color: ${(props) => props.theme.primary.button};
     padding: 5px;
     height: 2.2rem;
     width: 2.2rem;

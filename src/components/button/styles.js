@@ -82,4 +82,8 @@ export const ButtonIcon = styled.button`
     height: 1.3rem;
     width: 1.3rem;
   }
+
+  &:hover > svg {
+    color: ${(props) => props.theme.primary.button};
+  }
 `;
